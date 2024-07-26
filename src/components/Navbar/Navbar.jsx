@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../../assets/logo.png'
 import { IoMdSearch } from "react-icons/io";
 import { FaCartShopping } from 'react-icons/fa6';
+import  DarkMode from  "./DarkMode";
+
 
 const Navbar = () => {
   return <div>
@@ -33,11 +35,16 @@ const Navbar = () => {
                         className='text-gray-500 group-hover:text-primary absolute top-1/2 -translate-y-1/2 right-3' />
                     </div>
                     {/*order button*/}
-                    <button onClick={() => alert("Ordering not available yet") } className='bg-gradient-to-r from-primary to-secondary
+                    <button onClick={() => alert("Ordering not available yet") } 
+                    className='bg-gradient-to-r from-primary to-secondary
                     transition-all duration-200 text-white py-1 px-4 rounded-full flex items-center gap-3 group'>
                         <span className='group-hover:block hidden transition-all duration-200'>Order</span>
                         <FaCartShopping className='text-xl text-white drop-shadow-sm cursor-pointer'/>
                     </button>
+                    {/*Darkmode Switch*/}
+                    <div>
+                        <DarkMode/>
+                    </div>
                 </div>
             </div>
         </div>
