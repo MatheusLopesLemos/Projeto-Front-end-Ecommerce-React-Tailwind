@@ -75,15 +75,23 @@ const Products = () => {
                         <img src={data.img} alt=''
                         className='h-[220px] w-[150px] object-cover rounded-md' />
                         <div>
-                        <h1 data-aos="fade-up" className='font-semibold'>{data.title}</h1>
-                        <p data-aos="fade-up" className='text-sm text-gray-600 '>{data.color}</p>
-                        <div data-aos="fade-up" className='flex items-center gap-1'>
-                            <FaStar className='text-yellow-400'/>
-                            <span>{data.rating}</span>
+                            <h1 data-aos="fade-up" className='font-semibold'>{data.title}</h1>
+                            <p data-aos="fade-up" className='text-sm text-gray-600 '>{data.color}</p>
+                                <div data-aos="fade-up" className='flex items-center gap-1'>
+                                    <FaStar className='text-yellow-400'/>
+                                    <span>{data.rating}</span>
+                                </div>
                         </div>
                     </div>
-                    </div>
                 ))}
+            </div>
+            <div className='flex justify-center'>
+            {/*View All Button*/}
+                <button
+                data-aos='fade-up' 
+                className='text-center mt-10 cursor-pointer bg-primary text-white py-1 px-5 rounded-md'>
+                    View All
+                </button>
             </div>
         </div>
       </div>
