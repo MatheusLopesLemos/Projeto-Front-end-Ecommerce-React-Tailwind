@@ -5,6 +5,7 @@ import Products from './components/Products/Products';
 import TopProducts from './components/TopProducts/TopProducts';
 import Banner from './components/Banner/Banner';
 import Subscribe from './components/Subscribe/Subscribe';
+import Testimonials from './components/Testimonials/Testimonials';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,6 +18,7 @@ const App = () => {
       duration:800,
       easing:'ease-in-sine',
       delay:100,
+      once: true,
     });
     AOS.refresh();
 
@@ -30,6 +32,7 @@ const App = () => {
       <Banner/>
       <Subscribe/>
       <Products/>
+      <Testimonials/>
     </div>
   )
 }

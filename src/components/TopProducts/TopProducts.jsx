@@ -31,10 +31,23 @@ const TopProducts = () => {
     <div>
       <div className="container">
         {/*Header Section*/}
-        <div className='text-left mb-24'>
-            <p className='text-sm text-primary'>Top Rated Products for you</p>
-            <h1 className='text-3xl font-bold '>Best Products</h1>
-            <p className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga rerum inventore voluptates.</p>
+        <div 
+        className='text-left mb-24'>
+            <p 
+            data-aos="fade-up"
+            className='text-sm text-primary'>
+                Top Rated Products for you
+            </p>
+            <h1 
+            data-aos="fade-up"
+            className='text-3xl font-bold '>
+                Best Products
+            </h1>
+            <p 
+            data-aos="fade-up"
+            className='text-xs text-gray-400'>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga rerum inventore voluptates.
+            </p>
         </div>
         {/*Body Section*/}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 md:gap-5 place-items-center'>
